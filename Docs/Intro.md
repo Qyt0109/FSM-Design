@@ -1,5 +1,11 @@
 # FSM DESIGN - AUTHOR: [QUYET DAO](https://github.com/Qyt0109)
 
+[>>> HOME](../README.md)
+
+[>>> FSM coding style](FSM.md)
+
+[>>> Introduction & more](Intro.md)
+
 ## 1. Introduction
 
 This repository covers four of the seven commonly taught FSM (Finite State Machine) design techniques. The selected techniques are highlighted below:
@@ -38,7 +44,6 @@ To determine what makes a good coding style, we have selected the following goal
 1. The coding style should facilitate debugging.
 1. The coding style should yield efficient synthesis results.
 1. The coding style should support easy modifications to the FSM, including adjustments to the number of inputs and outputs.
-1. Approximate lines of code.
 
 Each coding style is assessed based on these criteria, with the results summarized in the table below:
 
@@ -50,6 +55,11 @@ Each coding style is assessed based on these criteria, with the results summariz
 | Facilitates debugging                  |            ✅              |            ✅             |            ✅             |            ✅             |
 | Efficient synthesis                    |            ✅              |            ❌             |            ✅             |            ✅             |
 | Easily modifiable for FSM changes      |            ❌              |            ✅             |            ✅             |            ✅             |
-| Lines of code                          |            192             |            119           |            92             |            128            |
 
 *Summary of Coding Goals*
+
+[>>> HOME](../README.md)
+
+[>>> FSM coding style](FSM.md)
+
+[>>> Introduction & more](Intro.md)

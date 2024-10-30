@@ -1,5 +1,11 @@
 # FSM DESIGN - AUTHOR: [QUYET DAO](https://github.com/Qyt0109)
 
+[>>> HOME](../README.md)
+
+[>>> FSM coding style](FSM.md)
+
+[>>> Introduction & more](Intro.md)
+
 ## 4. State machine types
 
 ### 4.1. Moore and Mealy
@@ -279,19 +285,20 @@ During their analysis, they observed that the **1-always block FSM coding style*
 To improve efficiency, they introduced a **4-always block coding style**. Here, an `always_comb` block handles next-output values based on both the registered state and FSM inputs. The design resembles the 3-always block style but splits the final `always_ff` block into an `always_comb` for next-output logic and an `always_ff` for registering outputs. This modification delivers synthesis results comparable to the 1-always block style while requiring significantly less code.
 
 ```
-                                    comb             seq       
-                              ┌───────┐       ┌───────┐        
-                              │ Next  │next   │Outputs│        
-                        inputs│outputs│outputs│  FF   │outputs 
-inputs────●──────────────────▶│ logic ├──────▶│       ├────▶   
-          │                   └───────┘       └───────┘        
-          ▼ comb           seq    ▲ state                      
-      ┌───────┐     ┌───────┐     │                            
-      │ Next  │     │  FSM  │     │                            
- state│ state │     │ state │state│                            
-   ┌─▶│ logic ├────▶│  FF   ├─●───┘                            
-   │  └───────┘next └───────┘ │                                
-   └──────────────────────────┘                                
+inputs                                       
+   │              comb             seq       
+   │  inputs┌───────┐       ┌───────┐        
+   ●───────▶│ Next  │next   │Outputs│        
+   │  state │outputs│outputs│  FF   │outputs 
+   │     ┌─▶│ logic ├──────▶│       ├────▶   
+   │     │  └───────┘       └───────┘        
+   │     │        comb            seq        
+   │ inputs ┌───────┐       ┌───────┐        
+   └─────┼─▶│ Next  │       │  FSM  │        
+      state │ state │ next  │ state │state   
+         ●─▶│ logic ├──────▶│  FF   ├─┐      
+         │  └───────┘       └───────┘ │      
+         └────────────────────────────┘      
 ```
 
 ``` verilog
@@ -352,3 +359,8 @@ module fsm (
 endmodule
 ```
 
+[>>> HOME](../README.md)
+
+[>>> FSM coding style](FSM.md)
+
+[>>> Introduction & more](Intro.md)
