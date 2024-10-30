@@ -207,13 +207,11 @@ A key feature of this style is that outputs are assigned based on the *next stat
                next │outputs│outputs│  FF   │outputs 
 inputs────┐     ┌──▶│ logic ├──────▶│       ├────▶   
           │     │   └───────┘       └───────┘        
-          ▼ comb│                                    
-      ┌───────┐ │                                    
-      │       │ │          seq                       
-      │ Next  │ │   ┌───────┐                        
-      │ state │ │   │  FSM  │                        
- state│ logic │ │   │ state │state                   
-   ┌─▶│       ├─●──▶│  FF   ├─┐                      
+          ▼ comb│          seq                       
+      ┌───────┐ │   ┌───────┐                        
+      │ Next  │ │   │  FSM  │                        
+ state│ state │ │   │ state │state                   
+   ┌─▶│ logic ├─●──▶│  FF   ├─┐                      
    │  └───────┘next └───────┘ │                      
    └──────────────────────────┘                      
 ```
