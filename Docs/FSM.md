@@ -1,10 +1,16 @@
 # FSM DESIGN - AUTHOR: [QUYET DAO](https://github.com/Qyt0109)
 
+---
+
 [>>> HOME](../README.md)
+
+[>>> Introduction & more](Intro.md)
 
 [>>> FSM coding style](FSM.md)
 
-[>>> Introduction & more](Intro.md)
+[>>> FSM coding examples](Code.md)
+
+---
 
 ## 4. State machine types
 
@@ -358,9 +364,14 @@ module fsm (
 
 endmodule
 ```
+---
 
 [>>> HOME](../README.md)
 
+[>>> Introduction & more](Intro.md)
+
 [>>> FSM coding style](FSM.md)
 
-[>>> Introduction & more](Intro.md)
+[>>> FSM coding examples](Code.md)
+
+---

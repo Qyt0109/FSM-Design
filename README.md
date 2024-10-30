@@ -12,3 +12,5 @@ There are at least seven different Finite State Machine (FSM) design techniques.
 1. [Introduction & more](./Docs/Intro.md)
 
 1. [FSM coding style](./Docs/FSM.md)
+
+1. [FSM coding examples](./Docs/Code.md)
