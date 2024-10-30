@@ -42,18 +42,6 @@ FSM:
          │        │  rd=1   │          │  
          └────────┤  ds=0   ├──────────┘  
             ws=0  └─────────┘  ws=1       
-
-
-
-    inputs────┐                                        
-              │                                        
-              ▼ comb           seq          comb       
-          ┌───────┐     ┌───────┐     ┌───────┐        
-          │ Next  │     │  FSM  │     │Outputs│        
-     state│ state │next │ state │state│ logic │outputs 
-       ┌─▶│ logic ├────▶│       ├─●──▶│       ├────▶   
-       │  └───────┘     └───────┘ │   └───────┘        
-       └──────────────────────────┘                    
 ```
 
 Example code for schemes:
