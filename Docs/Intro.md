@@ -55,6 +55,7 @@ Each coding style is assessed based on these criteria, with the results summariz
 | Facilitates debugging                  |            ✅              |            ✅             |            ✅             |            ✅             |
 | Efficient synthesis                    |            ✅              |            ❌             |            ✅             |            ✅             |
 | Easily modifiable for FSM changes      |            ❌              |            ✅             |            ✅             |            ✅             |
+| Conclusion                             |🖤🖤🖤❤️❤️❤️ - Not recommended  |🖤❤️❤️❤️❤️❤️ - Recommended      |❤️❤️❤️❤️❤️❤️ - Recommended      |❤️❤️❤️❤️❤️❤️ - Recommended      |
 
 *Summary of Coding Goals*
 
