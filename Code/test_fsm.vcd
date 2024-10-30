@@ -1,0 +1,232 @@
+$date
+	Wed Oct 30 18:23:17 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module fsm_2_always $end
+$var wire 1 ! clk $end
+$var wire 1 " rst $end
+$var wire 1 # start $end
+$var wire 1 $ ws $end
+$var parameter 24 % DLY $end
+$var parameter 32 & DONE $end
+$var parameter 32 ' IDLE $end
+$var parameter 32 ( READ $end
+$var parameter 1 ) UNKW $end
+$var reg 32 * cstate [31:0] $end
+$var reg 1 + ds $end
+$var reg 32 , nstate [31:0] $end
+$var reg 1 - rd $end
+$upscope $end
+$scope module fsm_3_always $end
+$var wire 1 . clk $end
+$var wire 1 / rst $end
+$var wire 1 0 start $end
+$var wire 1 1 ws $end
+$var parameter 24 2 DLY $end
+$var parameter 32 3 DONE $end
+$var parameter 32 4 IDLE $end
+$var parameter 32 5 READ $end
+$var parameter 1 6 UNKW $end
+$var reg 32 7 cstate [31:0] $end
+$var reg 1 8 ds $end
+$var reg 32 9 nstate [31:0] $end
+$var reg 1 : rd $end
+$upscope $end
+$scope module fsm_4_always $end
+$var wire 1 ; clk $end
+$var wire 1 < rst $end
+$var wire 1 = start $end
+$var wire 1 > ws $end
+$var parameter 24 ? DLY $end
+$var parameter 32 @ DONE $end
+$var parameter 32 A IDLE $end
+$var parameter 32 B READ $end
+$var parameter 1 C UNKW $end
+$var reg 32 D cstate [31:0] $end
+$var reg 1 E ds $end
+$var reg 1 F nds $end
+$var reg 1 G nrd $end
+$var reg 32 H nstate [31:0] $end
+$var reg 1 I rd $end
+$upscope $end
+$scope module test_fsm $end
+$var wire 1 J rd $end
+$var wire 1 K ds $end
+$var parameter 32 L CLK_PERIOD $end
+$var reg 1 M clk $end
+$var reg 1 N rst $end
+$var reg 1 O start $end
+$var reg 1 P ws $end
+$scope module fsm_always_dut $end
+$var wire 1 M clk $end
+$var wire 1 N rst $end
+$var wire 1 O start $end
+$var wire 1 P ws $end
+$var parameter 24 Q DLY $end
+$var parameter 32 R DONE $end
+$var parameter 32 S IDLE $end
+$var parameter 32 T READ $end
+$var parameter 1 U UNKW $end
+$var reg 32 V cstate [31:0] $end
+$var reg 1 K ds $end
+$var reg 1 J rd $end
+$upscope $end
+$scope task nop_clk $end
+$upscope $end
+$scope task reset $end
+$upscope $end
+$scope task test $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+xU
+b1010010010001010100000101000100 T
+b1001001010001000100110001000101 S
+b1000100010011110100111001000101 R
+b10001000100110001011001 Q
+b1010 L
+xC
+b1010010010001010100000101000100 B
+b1001001010001000100110001000101 A
+b1000100010011110100111001000101 @
+b10001000100110001011001 ?
+x6
+b1010010010001010100000101000100 5
+b1001001010001000100110001000101 4
+b1000100010011110100111001000101 3
+b10001000100110001011001 2
+x)
+b1010010010001010100000101000100 (
+b1001001010001000100110001000101 '
+b1000100010011110100111001000101 &
+b10001000100110001011001 %
+$end
+#0
+$dumpvars
+b1001001010001000100110001000101 V
+0P
+0O
+1N
+0M
+0K
+0J
+xI
+b0x H
+0G
+xF
+xE
+bx D
+z>
+z=
+z<
+z;
+x:
+b0x 9
+x8
+bx 7
+z1
+z0
+z/
+z.
+x-
+b0x ,
+x+
+bx *
+z$
+z#
+z"
+z!
+$end
+#5
+1M
+#10
+0M
+#15
+1M
+#20
+0M
+#25
+1M
+#30
+0N
+0M
+#35
+b1001001010001000100110001000101 V
+1M
+#40
+0M
+#45
+b1001001010001000100110001000101 V
+1M
+#50
+0M
+#55
+b1001001010001000100110001000101 V
+1M
+#60
+1O
+0M
+#65
+1J
+b1010010010001010100000101000100 V
+1M
+#70
+1P
+0O
+0M
+#75
+1J
+b10001000100110001011001 V
+1M
+#80
+0M
+#85
+1J
+b1010010010001010100000101000100 V
+1M
+#90
+0M
+#95
+1J
+b10001000100110001011001 V
+1M
+#100
+0M
+#105
+1J
+b1010010010001010100000101000100 V
+1M
+#110
+0M
+#115
+1J
+b10001000100110001011001 V
+1M
+#120
+0P
+0M
+#125
+1K
+0J
+b1000100010011110100111001000101 V
+1M
+#130
+0M
+#135
+0K
+b1001001010001000100110001000101 V
+1M
+#140
+0M
+#145
+b1001001010001000100110001000101 V
+1M
+#150
+0M

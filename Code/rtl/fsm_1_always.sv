@@ -54,14 +54,14 @@ module fsm_1_always (
     input ws
 );
 
-  localparam IDLE = 0;
-  localparam READ = 1;
-  localparam DLY = 2;
-  localparam DONE = 3;
+  localparam IDLE = "IDLE";
+  localparam READ = "READ";
+  localparam DLY = "DLY";
+  localparam DONE = "DONE";
 
   localparam UNKW = 'x;
 
-  reg [1:0] cstate;
+  reg [4*8-1:0] cstate;
 
   always_ff @(posedge clk, posedge rst) begin
     if (rst) begin
