@@ -62,6 +62,7 @@ Each coding style is assessed based on these criteria, with the results summariz
 | Efficient synthesis                     |              ✅             |             ❌            |              ✅            |              ✅            |
 | Easily modifiable for FSM changes       |              ❌             |             ✅            |              ✅            |              ✅            |
 | Conclusion                              | 🖤🖤🖤❤️❤️❤️ <br> Not generally recommended but useful for simple designs where combinational logic for outputs is manageable | 🖤❤️❤️❤️❤️❤️ <br> Recommended for general use | ❤️❤️❤️❤️❤️❤️ <br> Efficient for FSMs with many states and transitions; however, the 4 Always, reg outputs is often preferable | ❤️❤️❤️❤️❤️❤️ <br> Initially complex but ideal for large-scale FSMs; may be overkill for smaller FSMs |
+
 *Summary of Coding Goals*
 
 ---
